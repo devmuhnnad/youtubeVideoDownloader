@@ -27,6 +27,6 @@ app.post("/youtube", async (req, res) => {
 
 app.use(express.static("public"));
 
-app.listen(80, () => {
+app.listen(process.env.PORT || 80, () => {
   console.log("SERVER STARTED");
 });
